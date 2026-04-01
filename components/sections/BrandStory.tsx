@@ -21,7 +21,7 @@ export function BrandStory() {
     <section
       ref={sectionRef}
       id="story"
-      className="relative overflow-hidden bg-[linear-gradient(180deg,#efe8dc_0%,#ebe2d4_50%,#e7dece_100%)]"
+      className="relative overflow-hidden surface-royal-light"
     >
       {/* Ambient spots */}
       <div className="absolute top-1/4 left-0 w-72 h-72 rounded-full bg-antique-gold/5 blur-[100px] pointer-events-none" />
@@ -74,7 +74,7 @@ export function BrandStory() {
                 )}
                 style={{ transitionDelay: "300ms" }}
               >
-                Born in the royal corridors of Rajasthan, Mewad carries forward a
+                Born from a royal Indian design legacy, Mewad carries forward a
                 centuries-old tradition of exquisite craftsmanship. Each thread we
                 weave tells a story of artisans whose skills have been passed down
                 through generations.
@@ -87,7 +87,7 @@ export function BrandStory() {
                 style={{ transitionDelay: "380ms" }}
               >
                 We believe that true luxury lies not in ostentation, but in the
-                quiet confidence of wearing something truly exceptional — crafted
+                quiet confidence of wearing something truly exceptional, crafted
                 with patience, passion, and an unwavering commitment to excellence.
               </p>
             </div>
@@ -108,10 +108,10 @@ export function BrandStory() {
 
             <div
               className={cn(
-                "transition-all duration-800 ease-luxe",
+                "mt-8 transition-all duration-800 ease-luxe",
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
               )}
-              style={{ transitionDelay: "540ms" }}
+              style={{ transitionDelay: "620ms" }}
             >
               <span className="text-antique-gold/55 text-xs tracking-[0.3em] uppercase">
                 Crafting Excellence Since 1952
@@ -150,14 +150,9 @@ export function BrandStory() {
 
       {/* Blend to footer */}
       <div className="pointer-events-none">
-        <div
-          className="w-full h-10 sm:h-14"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(78,36,50,0.04) 0%, rgba(78,36,50,0.28) 44%, rgba(78,36,50,0.9) 100%)",
-          }}
-        />
+        <div className="w-full h-10 sm:h-14 section-fade-to-footer" />
       </div>
     </section>
   )
 }
+

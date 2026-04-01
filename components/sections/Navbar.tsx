@@ -34,8 +34,8 @@ export function Navbar() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-700",
           scrolled
-            ? "bg-deep-maroon/88 backdrop-blur-md shadow-[0_4px_30px_rgba(26,20,16,0.3)] border-b border-antique-gold/10"
-            : "bg-gradient-to-b from-deep-maroon/60 via-deep-maroon/30 to-transparent"
+            ? "glass-royal-dark shadow-[0_16px_45px_rgba(26,12,20,0.45)] border-b border-antique-gold/25"
+            : "bg-gradient-to-b from-royal-midnight/75 via-deep-maroon/35 to-transparent"
         )}
       >
         <div className="max-w-7xl mx-auto px-5 sm:px-8 md:px-12">
@@ -93,7 +93,7 @@ export function Navbar() {
             <div className="hidden md:block">
               <a
                 href="#"
-                className="px-5 py-2.5 border border-antique-gold/50 text-soft-ivory text-xs tracking-[0.2em] uppercase hover:bg-antique-gold hover:text-muted-black hover:border-antique-gold transition-all duration-500"
+                className="px-5 py-2.5 rounded-full glass-royal-pill text-soft-ivory text-xs tracking-[0.2em] uppercase hover:bg-antique-gold hover:text-muted-black hover:border-antique-gold transition-all duration-500"
               >
                 Shop Now
               </a>
@@ -132,7 +132,7 @@ export function Navbar() {
       {/* Mobile Menu Overlay */}
       <div
         className={cn(
-          "fixed inset-0 z-40 bg-gradient-to-b from-[#4a2130]/98 via-deep-maroon/97 to-[#2e1820]/98 flex flex-col items-center justify-center transition-all duration-500",
+          "fixed inset-0 z-40 bg-gradient-to-b from-royal-midnight/98 via-deep-maroon/96 to-royal-plum/98 flex flex-col items-center justify-center transition-all duration-500",
           menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         )}
       >

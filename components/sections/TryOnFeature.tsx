@@ -21,7 +21,7 @@ export function TryOnFeature() {
     <section
       ref={sectionRef}
       id="tryon"
-      className="relative overflow-hidden bg-[linear-gradient(180deg,#4a2130_0%,#5f293a_45%,#47202d_100%)]"
+      className="relative overflow-hidden surface-royal-dark"
     >
       {/* Radial glow */}
       <div className="absolute inset-0 pointer-events-none">
@@ -131,7 +131,7 @@ export function TryOnFeature() {
 
                   {/* App UI */}
                   <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <div className="rounded-xl p-3 bg-soft-ivory/10 backdrop-blur-md border border-antique-gold/20">
+                    <div className="rounded-xl p-3 glass-royal-pill">
                       <div className="flex items-center justify-between mb-2">
                         <span className="text-soft-ivory text-xs font-medium">Royal Sherwani</span>
                         <span className="text-antique-gold text-[10px]">Perfect Match</span>
@@ -167,13 +167,7 @@ export function TryOnFeature() {
 
       {/* Blend transition to next light section */}
       <div className="pointer-events-none">
-        <div
-          className="w-full h-14 sm:h-20"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(253,251,247,0) 0%, rgba(253,251,247,0.7) 56%, rgba(253,251,247,1) 100%)",
-          }}
-        />
+        <div className="w-full h-14 sm:h-20 section-fade-to-light" />
       </div>
     </section>
   )

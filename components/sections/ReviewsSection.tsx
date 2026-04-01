@@ -19,7 +19,7 @@ const reviews = [
     avatar: "/mewad/person/p2.webp",
     rating: 5,
     text: "From the moment I received my lehenga, I knew this was special. The attention to detail and quality of fabric exceeded all my expectations.",
-    location: "Jaipur",
+    location: "Mumbai",
   },
   {
     id: 3,
@@ -76,7 +76,7 @@ function ReviewCard({
       <div
         className={cn(
           "rounded-2xl p-6 sm:p-8 transition-all ease-luxe duration-700",
-          "bg-soft-ivory/6 backdrop-blur-sm",
+          "glass-royal-dark",
           "border border-antique-gold/15 hover:border-antique-gold/35",
           "shadow-[0_8px_40px_rgba(26,20,16,0.15)]"
         )}
@@ -129,7 +129,7 @@ export function ReviewsSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-[linear-gradient(180deg,#4b2231_0%,#5d2736_45%,#43202c_100%)]"
+      className="relative overflow-hidden surface-royal-dark"
     >
       <div className="absolute top-0 left-1/4 w-[min(500px,80vw)] h-[min(500px,80vw)] rounded-full bg-antique-gold/8 blur-[150px] pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-[min(400px,70vw)] h-[min(400px,70vw)] rounded-full bg-burnished-gold/6 blur-[120px] pointer-events-none" />
@@ -177,13 +177,7 @@ export function ReviewsSection() {
       </div>
 
       <div className="pointer-events-none">
-        <div
-          className="w-full h-14 sm:h-20"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(245,240,232,0) 0%, rgba(245,240,232,0.64) 56%, rgba(245,240,232,1) 100%)",
-          }}
-        />
+        <div className="w-full h-14 sm:h-20 section-fade-to-light" />
       </div>
     </section>
   )

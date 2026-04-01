@@ -5,13 +5,18 @@
 
 :root {
   /* Mewad Royal Color Palette */
-  --deep-maroon: #6B1F2F;
-  --wine-red: #8B3A42;
-  --sand-beige: #F5F0E8;
-  --antique-gold: #C9A961;
-  --burnished-gold: #D4AF37;
-  --soft-ivory: #FDFBF7;
-  --muted-black: #1A1410;
+  --deep-maroon: #541b33;
+  --wine-red: #6d233f;
+  --sand-beige: #f1e5d0;
+  --antique-gold: #d1b16d;
+  --burnished-gold: #b88937;
+  --soft-ivory: #fbf6eb;
+  --muted-black: #1a1216;
+  --royal-midnight: #171928;
+  --royal-plum: #3b1a34;
+  --royal-garnet: #5a1f38;
+  --royal-champagne: #e8d8b7;
+  --royal-smoke: #9a8660;
   
   /* Semantic Tokens */
   --background: var(--soft-ivory);
@@ -53,9 +58,9 @@
 }
 
 @theme inline {
-  --font-sans: 'Inter', system-ui, sans-serif;
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-mono: 'Geist Mono', monospace;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   
   --color-deep-maroon: var(--deep-maroon);
   --color-wine-red: var(--wine-red);
@@ -64,6 +69,11 @@
   --color-burnished-gold: var(--burnished-gold);
   --color-soft-ivory: var(--soft-ivory);
   --color-muted-black: var(--muted-black);
+  --color-royal-midnight: var(--royal-midnight);
+  --color-royal-plum: var(--royal-plum);
+  --color-royal-garnet: var(--royal-garnet);
+  --color-royal-champagne: var(--royal-champagne);
+  --color-royal-smoke: var(--royal-smoke);
   
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -330,4 +340,96 @@
 
 .img-zoom:hover img {
   transform: scale(1.05);
+}
+
+/* Royal Surface System */
+.surface-royal-hero {
+  background: linear-gradient(180deg, #221428 0%, #3a1a32 46%, #1a1322 100%);
+}
+
+.surface-royal-dark {
+  background: linear-gradient(180deg, #31162d 0%, #4a1e38 48%, #221426 100%);
+}
+
+.surface-royal-light {
+  background: linear-gradient(180deg, #fdf8ef 0%, #f6ecdb 54%, #ebdcc3 100%);
+}
+
+.surface-royal-light-soft {
+  background: linear-gradient(180deg, #fcf7ed 0%, #f7edde 58%, #f0e2ca 100%);
+}
+
+.surface-royal-footer {
+  background: linear-gradient(180deg, #3f1b32 0%, #2d1627 52%, #1e101e 100%);
+}
+
+/* Smooth Section Dividers */
+.section-fade-to-light {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(251, 246, 235, 0) 0%,
+      rgba(251, 246, 235, 0.42) 34%,
+      rgba(251, 246, 235, 0.78) 68%,
+      rgba(251, 246, 235, 1) 100%
+    );
+}
+
+.section-fade-to-dark {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(42, 21, 37, 0) 0%,
+      rgba(42, 21, 37, 0.4) 34%,
+      rgba(42, 21, 37, 0.8) 68%,
+      rgba(42, 21, 37, 1) 100%
+    );
+}
+
+.section-fade-to-footer {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(34, 16, 29, 0) 0%,
+      rgba(34, 16, 29, 0.35) 30%,
+      rgba(34, 16, 29, 0.78) 66%,
+      rgba(34, 16, 29, 1) 100%
+    );
+}
+
+/* Glassmorphism Utilities */
+.glass-royal-light {
+  background: linear-gradient(
+    160deg,
+    rgba(255, 252, 247, 0.62) 0%,
+    rgba(246, 236, 219, 0.38) 100%
+  );
+  backdrop-filter: blur(16px) saturate(135%);
+  border: 1px solid rgba(184, 137, 55, 0.22);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.45),
+    0 20px 50px rgba(31, 16, 26, 0.12);
+}
+
+.glass-royal-dark {
+  background: linear-gradient(
+    160deg,
+    rgba(47, 21, 38, 0.68) 0%,
+    rgba(29, 16, 28, 0.56) 100%
+  );
+  backdrop-filter: blur(18px) saturate(140%);
+  border: 1px solid rgba(209, 177, 109, 0.24);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 22px 50px rgba(20, 10, 20, 0.45);
+}
+
+.glass-royal-pill {
+  background: linear-gradient(
+    180deg,
+    rgba(251, 246, 235, 0.18) 0%,
+    rgba(251, 246, 235, 0.08) 100%
+  );
+  backdrop-filter: blur(14px) saturate(130%);
+  border: 1px solid rgba(209, 177, 109, 0.25);
 }

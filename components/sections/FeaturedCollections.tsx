@@ -51,7 +51,7 @@ function CollectionCard({
     >
       <div
         className={cn(
-          "relative overflow-hidden rounded-2xl bg-soft-ivory transition-all ease-luxe duration-700",
+          "relative overflow-hidden rounded-2xl glass-royal-light transition-all ease-luxe duration-700",
           "shadow-[0_8px_40px_rgba(26,20,16,0.1)] hover:shadow-[0_20px_60px_rgba(26,20,16,0.2)]",
           "border border-antique-gold/15 hover:border-antique-gold/40"
         )}
@@ -132,10 +132,10 @@ export function FeaturedCollections() {
     <section
       ref={sectionRef}
       id="collections"
-      className="relative overflow-hidden bg-[linear-gradient(180deg,#f6f1e9_0%,#f4eee4_55%,#eee4d6_100%)]"
+      className="relative overflow-hidden surface-royal-light"
     >
       {/* Top wave overlap from Hero */}
-      <div className="h-10 sm:h-14 bg-sand-beige" />
+      <div className="h-10 sm:h-14 bg-soft-ivory/80" />
 
       {/* Ambient gold glow */}
       <div className="absolute top-1/4 left-0 w-72 sm:w-96 h-72 sm:h-96 rounded-full bg-antique-gold/5 blur-[100px] pointer-events-none" />
@@ -210,13 +210,7 @@ export function FeaturedCollections() {
 
       {/* Bottom blend into darker section */}
       <div className="pointer-events-none">
-        <div
-          className="w-full h-14 sm:h-20"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(78,36,50,0.15) 0%, rgba(78,36,50,0.38) 40%, rgba(78,36,50,0.8) 100%)",
-          }}
-        />
+        <div className="w-full h-14 sm:h-20 section-fade-to-dark" />
       </div>
     </section>
   )

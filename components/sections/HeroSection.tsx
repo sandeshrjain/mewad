@@ -26,7 +26,7 @@ export function HeroSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden surface-royal-hero"
       id="hero"
     >
       {/* Background Image with Parallax */}
@@ -34,7 +34,7 @@ export function HeroSection() {
         className="absolute inset-0 z-0"
         style={{ transform: `translateY(${parallaxOffset}px)` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-[#3b1c27]/88 via-[#5a2b38]/72 to-[#3e1f2a]/86 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#24132a]/88 via-[#4a1f37]/72 to-[#2a1424]/86 z-10" />
         <div
           className="absolute inset-0 bg-cover bg-center scale-110"
           style={{
@@ -48,7 +48,7 @@ export function HeroSection() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[min(800px,100vw)] h-[min(800px,100vw)] rounded-full bg-antique-gold/8 blur-[150px] animate-gold-pulse" />
       </div>
 
-      {/* Floating Gold Dots — reduced, no random */}
+      {/* Floating Gold Dots - reduced, no random */}
       <div className="absolute inset-0 z-10 overflow-hidden pointer-events-none">
         {[
           { size: 3, left: "12%", top: "20%", delay: 0, dur: 18 },
@@ -74,15 +74,15 @@ export function HeroSection() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-20 text-center px-5 sm:px-8 max-w-4xl mx-auto pt-20 sm:pt-0">
-        {/* Logo — visible prominently in hero */}
+      <div className="relative z-20 text-center px-5 sm:px-8 max-w-4xl mx-auto pt-28 sm:pt-0">
+        {/* Logo - visible prominently in hero */}
         <div
           className={cn(
             "flex flex-col items-center mb-8 sm:mb-10 transition-all duration-1000 ease-luxe",
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           )}
         >
-          <div className="relative w-20 h-20 sm:w-24 sm:h-24 mb-5">
+          <div className="relative w-20 h-20 sm:w-24 sm:h-24 mb-5 p-1">
             <Image
               src={logoPath}
               alt="Mewad logo"
@@ -96,7 +96,7 @@ export function HeroSection() {
         {/* Brand tag */}
         <div
           className={cn(
-            "mb-5 transition-all duration-1000 delay-200 ease-luxe",
+            "mb-5 glass-royal-pill rounded-full px-4 py-2.5 inline-block transition-all duration-1000 delay-200 ease-luxe",
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           )}
         >
@@ -134,19 +134,23 @@ export function HeroSection() {
         {/* CTA Buttons */}
         <div
           className={cn(
-            "flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-1000 delay-700 ease-luxe",
+            "transition-all duration-1000 delay-700 ease-luxe",
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           )}
         >
-          <button className="group relative w-full sm:w-auto px-8 py-3.5 border border-antique-gold/60 text-soft-ivory text-xs tracking-[0.2em] uppercase overflow-hidden transition-all duration-700 hover:border-antique-gold hover:shadow-[0_0_30px_rgba(201,169,97,0.3)]">
-            <span className="relative z-10 transition-colors duration-500 group-hover:text-muted-black">
-              Explore Collection
-            </span>
-            <div className="absolute inset-0 bg-antique-gold transform -translate-x-full group-hover:translate-x-0 transition-transform duration-600 ease-luxe" />
-          </button>
-          <button className="w-full sm:w-auto px-8 py-3.5 text-antique-gold text-xs tracking-[0.2em] uppercase font-light hover:text-soft-ivory transition-colors duration-500">
-            Our Story &rarr;
-          </button>
+          <div className="inline-flex max-w-full glass-royal-dark rounded-2xl p-2 sm:p-2.5 border border-antique-gold/25 shadow-[0_14px_35px_rgba(20,10,20,0.35)]">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-3">
+              <button className="group relative w-full sm:w-auto px-8 py-3.5 border border-antique-gold/60 text-soft-ivory text-xs tracking-[0.2em] uppercase overflow-hidden transition-all duration-700 hover:border-antique-gold hover:shadow-[0_0_30px_rgba(201,169,97,0.3)]">
+                <span className="relative z-10 transition-colors duration-500 group-hover:text-muted-black">
+                  Explore Collection
+                </span>
+                <div className="absolute inset-0 bg-antique-gold transform -translate-x-full group-hover:translate-x-0 transition-transform duration-600 ease-luxe" />
+              </button>
+              <button className="w-full sm:w-auto px-8 py-3.5 text-antique-gold text-xs tracking-[0.2em] uppercase font-light hover:text-soft-ivory transition-colors duration-500">
+                Our Story &rarr;
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -166,10 +170,10 @@ export function HeroSection() {
       {/* Smooth mist transition to next section */}
       <div className="absolute bottom-0 left-0 right-0 z-20 pointer-events-none">
         <div
-          className="h-16 sm:h-20"
+          className="h-12 sm:h-20"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(245,240,232,0) 0%, rgba(245,240,232,0.78) 62%, rgba(245,240,232,1) 100%)",
+              "linear-gradient(to bottom, rgba(251,246,235,0) 0%, rgba(251,246,235,0.2) 46%, rgba(251,246,235,0.55) 76%, rgba(251,246,235,1) 100%)",
           }}
         />
       </div>

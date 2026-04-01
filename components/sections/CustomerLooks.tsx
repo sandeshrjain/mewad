@@ -143,7 +143,7 @@ export function CustomerLooks() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-[linear-gradient(180deg,#fdfbf7_0%,#f7f2ea_55%,#f1e8db_100%)]"
+      className="relative overflow-hidden surface-royal-light-soft"
     >
       {/* Ambient glows */}
       <div className="absolute top-1/3 left-1/5 w-72 h-72 rounded-full bg-antique-gold/4 blur-[100px] pointer-events-none" />
@@ -186,7 +186,7 @@ export function CustomerLooks() {
           </p>
         </div>
 
-        {/* Responsive Gallery — 2 cols on mobile, 3 on sm+, auto rows */}
+        {/* Responsive Gallery - 2 cols on mobile, 3 on sm+, auto rows */}
         <div
           className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 md:gap-5"
           style={{ gridAutoRows: "180px" }}
@@ -226,13 +226,7 @@ export function CustomerLooks() {
 
       {/* Blend to dark reviews section */}
       <div className="pointer-events-none">
-        <div
-          className="w-full h-14 sm:h-20"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(78,36,50,0.08) 0%, rgba(78,36,50,0.3) 42%, rgba(78,36,50,0.82) 100%)",
-          }}
-        />
+        <div className="w-full h-14 sm:h-20 section-fade-to-dark" />
       </div>
     </section>
   )

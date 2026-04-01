@@ -17,8 +17,8 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: 'Mewad | Riyasat of Traditional Elegance',
-  description: 'Discover handcrafted Indian ethnic luxury apparel inspired by royal Rajasthani heritage. Premium traditional wear for the modern connoisseur.',
-  keywords: ['luxury ethnic wear', 'Indian traditional clothing', 'Rajasthani heritage', 'premium apparel', 'handcrafted fashion'],
+  description: 'Discover handcrafted Indian ethnic luxury apparel inspired by royal Indian heritage. Premium traditional wear for the modern connoisseur.',
+  keywords: ['luxury ethnic wear', 'Indian traditional clothing', 'royal Indian heritage', 'premium apparel', 'handcrafted fashion'],
   authors: [{ name: 'Mewad' }],
   openGraph: {
     title: 'Mewad | Riyasat of Traditional Elegance',
