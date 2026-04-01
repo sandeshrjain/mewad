@@ -8,7 +8,7 @@ export function HeroSection() {
   const [scrollY, setScrollY] = useState(0)
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
-  const logoPath = "/mewad/logo.jpeg"
+  const logoPath = "/logo.jpeg"
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY)
@@ -38,7 +38,7 @@ export function HeroSection() {
         <div
           className="absolute inset-0 bg-cover bg-center scale-110"
           style={{
-            backgroundImage: "url('/mewad/person/p1.webp')",
+            backgroundImage: "url('/person/p1.webp')",
           }}
         />
       </div>
@@ -180,3 +180,4 @@ export function HeroSection() {
     </section>
   )
 }
+

@@ -8,7 +8,7 @@ const reviews = [
   {
     id: 1,
     name: "Rajesh Kapoor",
-    avatar: "/mewad/person/p1.webp",
+    avatar: "/person/p1.webp",
     rating: 5,
     text: "The craftsmanship is unparalleled. Every stitch tells a story of heritage and dedication. Wearing Mewad makes me feel connected to centuries of royal tradition.",
     location: "Mumbai",
@@ -16,7 +16,7 @@ const reviews = [
   {
     id: 2,
     name: "Sunita Devi",
-    avatar: "/mewad/person/p2.webp",
+    avatar: "/person/p2.webp",
     rating: 5,
     text: "From the moment I received my lehenga, I knew this was special. The attention to detail and quality of fabric exceeded all my expectations.",
     location: "Mumbai",
@@ -24,7 +24,7 @@ const reviews = [
   {
     id: 3,
     name: "Aditya Malhotra",
-    avatar: "/mewad/person/p3.webp",
+    avatar: "/person/p3.webp",
     rating: 5,
     text: "My wedding sherwani from Mewad was the highlight of the celebration. Everyone asked where I got it. Truly a masterpiece of traditional artistry.",
     location: "Delhi",
@@ -182,3 +182,4 @@ export function ReviewsSection() {
     </section>
   )
 }
+

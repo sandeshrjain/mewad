@@ -7,25 +7,25 @@ import Image from "next/image"
 const storeImages = [
   {
     id: 1,
-    image: "/mewad/shop/img2.webp",
+    image: "/shop/img2.webp",
     title: "Main Atelier",
     wide: true,
   },
   {
     id: 2,
-    image: "/mewad/shop/img3.webp",
+    image: "/shop/img3.webp",
     title: "Boutique Interior",
     wide: false,
   },
   {
     id: 3,
-    image: "/mewad/shop/img4.webp",
+    image: "/shop/img4.webp",
     title: "Collection Display",
     wide: false,
   },
   {
     id: 4,
-    image: "/mewad/shop/img6.webp",
+    image: "/shop/img6.webp",
     title: "Showcase Hall",
     wide: true,
   },
@@ -278,3 +278,4 @@ export function StorePresence() {
     </section>
   )
 }
+
