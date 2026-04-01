@@ -1,13 +1,12 @@
 /** @type {import('next').NextConfig} */
 const repositoryName = "mewad"
 const isProduction = process.env.NODE_ENV === "production"
-const basePath = isProduction ? `/${repositoryName}` : ""
+const assetPrefix = isProduction ? `/${repositoryName}` : ""
 
 const nextConfig = {
   output: "export",
   trailingSlash: true,
-  basePath,
-  assetPrefix: basePath,
+  assetPrefix,
   typescript: {
     ignoreBuildErrors: true,
   },
