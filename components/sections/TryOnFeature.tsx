@@ -122,7 +122,7 @@ export function TryOnFeature() {
               <div className="relative bg-muted-black rounded-[2.8rem] p-2.5 shadow-2xl border border-antique-gold/20 animate-float">
                 <div className="relative overflow-hidden rounded-[2.3rem] aspect-[9/19] bg-deep-maroon">
                   <Image
-                    src="/person/p5.webp"
+                    src="/mewad/person/p5.webp"
                     alt="Virtual Try-On Preview"
                     fill
                     className="object-cover"
@@ -172,4 +172,5 @@ export function TryOnFeature() {
     </section>
   )
 }
+
 

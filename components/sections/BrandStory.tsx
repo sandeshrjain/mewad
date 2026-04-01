@@ -129,7 +129,7 @@ export function BrandStory() {
           >
             <div className="relative w-full h-full rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-antique-gold/25 shadow-[0_20px_80px_rgba(26,20,16,0.2)] hover:shadow-[0_20px_80px_rgba(201,169,97,0.2)] transition-all duration-700 group">
                 <Image
-                src="/shop/img7.webp"
+                src="/mewad/shop/img7.webp"
                 alt="Mewad Atelier Interior"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -155,5 +155,6 @@ export function BrandStory() {
     </section>
   )
 }
+
 
 

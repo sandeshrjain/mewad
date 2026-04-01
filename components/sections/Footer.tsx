@@ -56,7 +56,7 @@ export function Footer() {
           <div className="mb-10 sm:mb-12">
             <div className="relative w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-5 rounded-full overflow-hidden border border-antique-gold/35 glass-royal-pill">
               <Image
-                src="/logo.jpeg"
+                src="/mewad/logo.jpeg"
                 alt="Mewad Logo"
                 fill
                 className="object-contain"
@@ -119,4 +119,5 @@ export function Footer() {
     </footer>
   )
 }
+
 

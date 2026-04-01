@@ -9,19 +9,19 @@ const collections = [
     id: 1,
     title: "Royal Sherwani",
     subtitle: "Regal Craftsmanship",
-    image: "/person/p2.webp",
+    image: "/mewad/person/p2.webp",
   },
   {
     id: 2,
     title: "Heritage Kurta",
     subtitle: "Timeless Elegance",
-    image: "/person/p3.webp",
+    image: "/mewad/person/p3.webp",
   },
   {
     id: 3,
     title: "Bandhani Lehenga",
     subtitle: "Artisan Legacy",
-    image: "/person/p4.webp",
+    image: "/mewad/person/p4.webp",
   },
 ]
 
@@ -215,4 +215,5 @@ export function FeaturedCollections() {
     </section>
   )
 }
+
 

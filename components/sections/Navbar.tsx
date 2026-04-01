@@ -14,7 +14,7 @@ const navLinks = [
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  const logoPath = "/logo.jpeg"
+  const logoPath = "/mewad/logo.jpeg"
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60)
@@ -182,4 +182,5 @@ export function Navbar() {
     </>
   )
 }
+
 

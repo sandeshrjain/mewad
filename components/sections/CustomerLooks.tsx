@@ -7,21 +7,21 @@ import Image from "next/image"
 const customerLooks = [
   {
     id: 1,
-    image: "/person/p2.webp",
+    image: "/mewad/person/p2.webp",
     name: "Arjun Mehta",
     handle: "@arjunstyle",
     tall: true,
   },
   {
     id: 2,
-    image: "/person/p3.webp",
+    image: "/mewad/person/p3.webp",
     name: "Priya Sharma",
     handle: "@priyalooks",
     tall: false,
   },
   {
     id: 3,
-    image: "/person/p4.webp",
+    image: "/mewad/person/p4.webp",
     name: "Vikram Singh",
     handle: "@vikramroyal",
     tall: true,
@@ -29,21 +29,21 @@ const customerLooks = [
   },
   {
     id: 4,
-    image: "/person/p5.webp",
+    image: "/mewad/person/p5.webp",
     name: "Ananya Patel",
     handle: "@ananyaethnic",
     tall: false,
   },
   {
     id: 5,
-    image: "/person/p6.webp",
+    image: "/mewad/person/p6.webp",
     name: "Rahul Verma",
     handle: "@rahulv",
     tall: false,
   },
   {
     id: 6,
-    image: "/person/p1.webp",
+    image: "/mewad/person/p1.webp",
     name: "Meera Reddy",
     handle: "@meerareddy",
     tall: true,
@@ -231,4 +231,5 @@ export function CustomerLooks() {
     </section>
   )
 }
+
 

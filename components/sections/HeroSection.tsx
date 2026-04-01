@@ -8,7 +8,7 @@ export function HeroSection() {
   const [scrollY, setScrollY] = useState(0)
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
-  const logoPath = "/logo.jpeg"
+  const logoPath = "/mewad/logo.jpeg"
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY)
@@ -36,7 +36,7 @@ export function HeroSection() {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-[#24132a]/88 via-[#4a1f37]/72 to-[#2a1424]/86 z-10" />
         <Image
-          src="/person/p1.webp"
+          src="/mewad/person/p1.webp"
           alt="Mewad hero"
           fill
           priority
@@ -181,4 +181,5 @@ export function HeroSection() {
     </section>
   )
 }
+
 
