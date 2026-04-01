@@ -35,11 +35,12 @@ export function HeroSection() {
         style={{ transform: `translateY(${parallaxOffset}px)` }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-[#24132a]/88 via-[#4a1f37]/72 to-[#2a1424]/86 z-10" />
-        <div
-          className="absolute inset-0 bg-cover bg-center scale-110"
-          style={{
-            backgroundImage: "url('/person/p1.webp')",
-          }}
+        <Image
+          src="/person/p1.webp"
+          alt="Mewad hero"
+          fill
+          priority
+          className="object-cover object-center scale-110"
         />
       </div>
 
