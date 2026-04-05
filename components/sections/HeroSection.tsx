@@ -75,7 +75,7 @@ export function HeroSection() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-20 text-center px-5 sm:px-8 max-w-4xl mx-auto pt-28 sm:pt-0">
+      <div className="relative z-20 text-center px-5 sm:px-8 max-w-4xl mx-auto pt-28 sm:pt-0 pb-20 sm:pb-0">
         {/* Logo - visible prominently in hero */}
         <div
           className={cn(
@@ -139,15 +139,15 @@ export function HeroSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           )}
         >
-          <div className="inline-flex max-w-full glass-royal-dark rounded-2xl p-2 sm:p-2.5 border border-antique-gold/25 shadow-[0_14px_35px_rgba(20,10,20,0.35)]">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-3">
-              <button className="group relative w-full sm:w-auto px-8 py-3.5 border border-antique-gold/60 text-soft-ivory text-xs tracking-[0.2em] uppercase overflow-hidden transition-all duration-700 hover:border-antique-gold hover:shadow-[0_0_30px_rgba(201,169,97,0.3)]">
+          <div className="mx-auto w-full max-w-[360px] sm:max-w-none sm:w-auto inline-flex glass-royal-dark rounded-2xl p-2 sm:p-2.5 border border-antique-gold/25 shadow-[0_14px_35px_rgba(20,10,20,0.35)]">
+            <div className="w-full flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-2.5 sm:gap-3">
+              <button className="group relative w-full sm:w-auto min-h-[46px] px-6 sm:px-8 py-3.5 border border-antique-gold/60 text-soft-ivory text-xs tracking-[0.14em] sm:tracking-[0.2em] uppercase overflow-hidden transition-all duration-700 hover:border-antique-gold hover:shadow-[0_0_30px_rgba(201,169,97,0.3)] text-center">
                 <span className="relative z-10 transition-colors duration-500 group-hover:text-muted-black">
                   Explore Collection
                 </span>
                 <div className="absolute inset-0 bg-antique-gold transform -translate-x-full group-hover:translate-x-0 transition-transform duration-600 ease-luxe" />
               </button>
-              <button className="w-full sm:w-auto px-8 py-3.5 text-antique-gold text-xs tracking-[0.2em] uppercase font-light hover:text-soft-ivory transition-colors duration-500">
+              <button className="w-full sm:w-auto min-h-[46px] px-6 sm:px-8 py-3.5 text-antique-gold text-xs tracking-[0.14em] sm:tracking-[0.2em] uppercase font-light hover:text-soft-ivory transition-colors duration-500 text-center whitespace-nowrap">
                 Our Story &rarr;
               </button>
             </div>

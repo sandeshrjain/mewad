@@ -21,7 +21,7 @@ export function BrandStory() {
     <section
       ref={sectionRef}
       id="story"
-      className="relative overflow-hidden surface-royal-light"
+      className="relative overflow-hidden surface-royal-light scroll-mt-24 sm:scroll-mt-28"
     >
       {/* Ambient spots */}
       <div className="absolute top-1/4 left-0 w-72 h-72 rounded-full bg-antique-gold/5 blur-[100px] pointer-events-none" />
